@@ -8,10 +8,9 @@ used for testing and iteration.
 This project is intended as a portfolio piece demonstrating backend,
 full-stack, and systems thinking in a retail / e-commerce context.
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\/////////////////////////////////////
+---
 
-
-## **Architecture Overview**
+## Architecture Overview
 
 The project is intentionally split into three layers:
 
@@ -26,7 +25,7 @@ Pure business logic implemented as a TypeScript library.
 This layer models **commerce decisions**, such as promotions and eligibility,
 and can be tested independently.
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\/////////////////////////////////////
+---
 
 ### `backend-api/`
 Node.js + Express REST API that exposes the rules engine.
@@ -40,7 +39,7 @@ Endpoints:
 - `GET /health` – service health check
 - `POST /evaluate` – evaluate an order against promotion rules
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\/////////////////////////////////////
+---
 
 ### `admin-ui/`
 Next.js (React + TypeScript) admin interface.
@@ -52,16 +51,15 @@ It allows:
 - Sending requests to `/evaluate`
 - Viewing results and raw JSON responses
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\/////////////////////////////////////
+---
 
-
-## **Local Setup**
+## Local Setup
 
 ### Prerequisites
 - Node.js 18+
 - npm
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\/////////////////////////////////////
+---
 
 ### 1) rules-core (optional local test)
 ```bash
